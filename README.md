@@ -1,2 +1,7 @@
-# medoc_task_new_repo
-4/08/23 added connection.js and index.js for testing the database database used (MySql) mongodb is not working properly 
+# In order to make the app work first install the dependencies by running the following command on your terminal
+
+```
+npm install
+```
+
+# Now start the server 
