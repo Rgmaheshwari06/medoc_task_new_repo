@@ -25,6 +25,17 @@ router
         res.redirect("/");
       })
       .catch((err) => console.log(err));
+  })
+// added edit button backend
+  .post("/edit/todo/:_id", (req, res) => {
+    const { _id } = req.params;
+    const { todo } = req.body;
+    Todo.updateOne({ _id }, { todo })
+      .then(() => {
+        console.log("Updated Todo Successfully!");
+        res.redirect("/");
+      })
+      .catch((err) => console.log(err));
   });
 
 module.exports = router;
